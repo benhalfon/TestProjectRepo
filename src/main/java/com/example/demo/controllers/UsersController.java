@@ -14,6 +14,7 @@ public class UsersController {
 	
 	@RequestMapping(value="", method = {RequestMethod.GET})
 	public Object get() {
+		System.err.println("Hello, logs!");
 		return Collections.singletonMap("ben", "test");
 	}
 	
